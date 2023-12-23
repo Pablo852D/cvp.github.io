@@ -95,6 +95,7 @@ header nav ul li .activa i{
 }
 
 /* Footer*/
+
 header .footer{
     text-align: center;
     background-color: var(--sideBGColor);
@@ -268,7 +269,7 @@ main{
 }
 
 #about .about-col .img-col img{
-    width: 100%;
+    width: 80%;
 }
 
 #about .about-col .info-col{

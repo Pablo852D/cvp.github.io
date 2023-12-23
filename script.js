@@ -10,7 +10,7 @@ MenuBtn.addEventListener('click', function(e){
 //Efecto de Escritura
 
 let typed = new Typed('.auto-input',{
-    strings: ['Freelancer!', 'Front-End Developer!', 'Programador PLC'],
+    strings: ['Freelancer!', 'Autodidacta!', 'Electricista!'],
     typedSpeed: 100,
     backSpeed: 100,
     backDelay: 200,

@@ -269,7 +269,7 @@ main{
 }
 
 #about .about-col .img-col img{
-    width: 80%;
+    width: 100%;
 }
 
 #about .about-col .info-col{
@@ -680,67 +680,84 @@ main{
 /* --- Seccion de Servicios Fin --- */
 
 /* --- Seccion Contacto Inicio ---*/
+#contact {
+        padding: 70px 30px;
+}
 #contacto{
-    padding: 70px 30px;
-}
-#contacto .contacto-row{
-    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 75vh;
     display: flex;
-    gap: 20px;
-    width: 100%;
-}
-#contacto .contacto-row .contacto{
-    
-    flex-basis: 100%;
-    min-width: 100%;
-    background-color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
-    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
     padding: 30px;
 }
-#contacto .contacto-row .contacto form{
+form{
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 600px; /*360px*/
+}
+#message{
+    width: auto;/*300px*/
+    height: auto;
+}
+.inpout-group{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin: 20px 0;
+    text-align: left;
 }
-#contacto .contacto-row .contacto form input,
-#contacto .contacto-row .contacto form textarea{
-    display: block;
-    width: 100%;
-    margin: 15px 0;
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--textColor);
-    padding: 10px 20px;
-    border: 2px solid lightgray;
-    border-radius: 2px;
+h7 {
+    color: #00A78E;
+    font-size: 30px;
+}
+label {
+    color: #040b14;
+    font-size: 20px; /*15px*/   
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+input, textarea {
+    font-size: 20px;
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #F7F7F7;
+    border: 2px solid #F0FAF1;
+    color: #00A78E;
     outline: none;
-    resize: none;
-    transition: 0.5s;
 }
-#contacto .contacto-row .contacto form input:focus,
-#contacto .contacto-row .contacto form textarea:focus{
-    border: 2px solid var(--themeColor);
-}
-#contacto .contacto-row .contacto form input[type=submit]{
-    background-color: var(--themeColor);
-    color: var(--bgColor);
-    border: 2px solid var(--themeColor);
-    font-size: 17px;
-    font-weight: 400;
+/*input::placeholder, textarea::placeholder{
+    color: #b5cab6;
+}*/
+.btn{
+    font-size: 20px;/*16px*/
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: #00A78E;
+    box-shadow: #01584b;
     cursor: pointer;
 }
-/* Vista en Movil*/
-@media only screen and (max-width: 700px){
-    #contacto{
-        padding: 50px;
+.btn:hover{
+    background-color: #01584b;
+}
+
+@media(max-width:991px) {
+    form{
+        padding: 50px 30px;
+        width: 350px;
     }
-    #contacto .contacto-row .contacto form input,
-    #contacto .contacto-row .contacto form textarea{
-        margin: 0 0;
+    #message{
+        width: auto;
+        height: auto;
+    }
+    inpout {
+        padding: 15px;
     }
 }
 
 /* --- Seccion Contacto Fin ---*/
+
+/* --- Certificado --- */
 
